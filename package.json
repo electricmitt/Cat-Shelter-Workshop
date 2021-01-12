@@ -1,24 +1,25 @@
 {
-  "name": "01.-cat-shelter-workshop-resources",
+  "name": "02-streams",
   "version": "1.0.0",
+  "description": "The Cat Shelter App.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "nodemon": "^2.0.7"
-  },
-  "devDependencies": {},
-  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrallen-m/Cat-Shelter-Workshop.git"
+    "url": "git+https://github.com/electricmitt/Cat-Shelter-Workshop.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mrallen-m/Cat-Shelter-Workshop/issues"
+    "url": "https://github.com/electricmitt/Cat-Shelter-Workshop"
   },
-  "homepage": "https://github.com/mrallen-m/Cat-Shelter-Workshop#readme",
-  "description": ""
+  "homepage": "https://github.com/electricmitt/Cat-Shelter-Workshop",
+  "dependencies": {
+    "formidable": "^1.2.2",
+    "nodemon": "^2.0.7"
+  },
+  "keywords": [],
+  "devDependencies": {}
 }
