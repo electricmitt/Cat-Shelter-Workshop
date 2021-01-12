@@ -1,14 +1,11 @@
-// Imports for Node packages
-const http = require('http');
+const http = require('http'); // http is built into Node.js, but must be imported to access
 const port = 3000;
+const handlers = require('./handlers');
 
 http.createServer((req, res) => {
-	res.writeHead(200, {
-		'Content-Type': 'text/plain'
-	});
-
-	res.write('Hello JS World');
-	res.end();
+  for (let handler of handlers) {
+    if(!handler(req, res)) {
+      break;
+    }
+  }
 }).listen(port);
-
-console.log("Port 3000 is open");
